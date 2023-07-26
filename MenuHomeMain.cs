@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QueGen
+{
+    public partial class MenuHomeMain : Form
+    {
+        public MenuHomeMain()
+        {
+            InitializeComponent();
+            userControl11.Hide();
+        }
+
+        private void HomeBtnAdd_Click(object sender, EventArgs e)
+        {
+            userControl11.Show();
+            userControl11.BringToFront();
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+        }
+    }
+}
