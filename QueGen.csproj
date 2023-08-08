@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuAddQuestionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAddQuestionView.Designer.cs">
+      <DependentUpon>MenuAddQuestionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAddQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAddQuestion.Designer.cs">
+      <DependentUpon>MenuAddQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,11 +70,23 @@
     <Compile Include="MenuAddModule.Designer.cs">
       <DependentUpon>MenuAddModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuAddModuleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAddModuleView.Designer.cs">
+      <DependentUpon>MenuAddModuleView.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuAddSubject.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuAddSubject.Designer.cs">
       <DependentUpon>MenuAddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAddSubjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAddSubjectView.Designer.cs">
+      <DependentUpon>MenuAddSubjectView.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuHomeMain.cs">
       <SubType>Form</SubType>
@@ -84,14 +108,26 @@
     <Compile Include="UserControl2.Designer.cs">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MenuAddQuestionView.resx">
+      <DependentUpon>MenuAddQuestionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuAdd.resx">
       <DependentUpon>MenuAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAddModule.resx">
       <DependentUpon>MenuAddModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuAddModuleView.resx">
+      <DependentUpon>MenuAddModuleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAddQuestion.resx">
+      <DependentUpon>MenuAddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuAddSubject.resx">
       <DependentUpon>MenuAddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAddSubjectView.resx">
+      <DependentUpon>MenuAddSubjectView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuHomeMain.resx">
       <DependentUpon>MenuHomeMain.cs</DependentUpon>

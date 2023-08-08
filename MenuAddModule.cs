@@ -44,22 +44,28 @@ namespace QueGen
                     //creates a new xml document if non existed before
                     XElement modules =
                         new XElement("Database",
+                        new XElement("Section", 
                         new XElement("Module", module_name)
-                        );
+                        ));
                     modules.Save("modules.xml");
+                    module_name = null;
                 }
                 else
                 {
                     //loads the xml document before adding
                     XDocument xmlload = XDocument.Load("modules.xml");
                     //inserts the new object modules into the existing xml doc
-                    XElement new_modules = new XElement("Module", module_name);
+                    XElement new_modules = new XElement("Section" ,
+                        new XElement ("Module", module_name));
                     //load the new modules into the existing xml doc
                     xmlload.Root.Add(new_modules);
                     xmlload.Save("modules.xml");
                 }
+                module_name = null;
+                MessageBox.Show("New Module saved!");
             }
             Input_Module.Text = String.Empty;
+            module_name = null;
 
         }
 
@@ -70,6 +76,14 @@ namespace QueGen
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MenuAddModuleView menuAddModuleView = new MenuAddModuleView();
+            menuAddModuleView.Show();
+            menuAddModuleView.BringToFront();
+
         }
     }
 }

@@ -45,6 +45,7 @@
             this.HomeBtnQuestion.TabIndex = 6;
             this.HomeBtnQuestion.Text = "QUESTION";
             this.HomeBtnQuestion.UseVisualStyleBackColor = false;
+            this.HomeBtnQuestion.Click += new System.EventHandler(this.HomeBtnQuestion_Click);
             // 
             // HomeBtnModule
             // 

@@ -27,5 +27,12 @@ namespace QueGen
         private void userControl11_Load(object sender, EventArgs e)
         {
         }
+
+        private void HomeBtnView_Click(object sender, EventArgs e)
+        {
+            MenuAddQuestionView menuAddQuestionView = new MenuAddQuestionView();
+            menuAddQuestionView.Show();
+            menuAddQuestionView.BringToFront();
+        }
     }
 }

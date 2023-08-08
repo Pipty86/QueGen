@@ -28,5 +28,12 @@ namespace QueGen
             MenuAddSubject menuAddSubject = new MenuAddSubject();
             menuAddSubject.Show();
         }
+
+        private void HomeBtnQuestion_Click(object sender, EventArgs e)
+        {
+            MenuAddQuestion menuAddQuestion = new MenuAddQuestion();
+            menuAddQuestion.Show();
+            menuAddQuestion.BringToFront();
+        }
     }
 }

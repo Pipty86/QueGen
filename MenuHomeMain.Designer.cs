@@ -62,6 +62,7 @@
             this.HomeBtnView.TabIndex = 1;
             this.HomeBtnView.Text = "VIEW";
             this.HomeBtnView.UseVisualStyleBackColor = false;
+            this.HomeBtnView.Click += new System.EventHandler(this.HomeBtnView_Click);
             // 
             // HomeBtnUpdate
             // 
